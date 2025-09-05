@@ -32,8 +32,5 @@ class Calculator:
 
 calc = Calculator()
 print(calc.add(5, 3))
-print(calc.subtract(10, 4))      # 6
-print(calc.multiply(2, 4))       # 8    
-       # 8
-
-
+print(calc.subtract(10, 4))
+print(calc.multiply(2, 4))
