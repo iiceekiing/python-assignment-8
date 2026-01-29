@@ -49,10 +49,12 @@ class ShoppingCart:
 prices = {"Shirt": 5000, "Shoes": 12000}
 cart = ShoppingCart(prices)
 cart.add_item("Shirt", 2)
-print(cart.calculate_total())  # 10000
-cart.remove_item("Shirt", 1)
-print(cart.calculate_total())  # 5000
-cart.add_item("Shoes", 1)
-print(cart.calculate_total())  # 17000
-cart.clear_cart()
-print(cart.calculate_total())  # 0
+
+print 
+# print(cart.calculate_total())
+# cart.remove_item("Shirt", 1)
+# print(cart.calculate_total())  
+# cart.add_item("Shoes", 1)
+# print(cart.calculate_total()) 
+# cart.clear_cart()
+# print(cart.calculate_total())

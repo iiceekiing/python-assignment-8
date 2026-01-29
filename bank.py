@@ -13,3 +13,21 @@ Example Usage:
     acc.withdraw(200)
     print(acc.get_balance())  # 1300
 """
+
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.name = {}
+        self.initial_balance = initial_balance
+
+    def deposit(self, name, amount):
+        if name in self.name:
+            self.name[name] += amount
+        else:
+            self.name[name] = amount
+
+    def withdraw(self, name, amount):
+        if name in self.name and self.name[name] >= amount:
+            self.name[name] -= amount
+            return True
+        return False
+
